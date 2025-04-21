@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>learning document object model</title>
+</head>
+<body>
+  <h1 id="heading">Neyaz Alam</h1>
+  <button onclick="changeStyle"> change Style</button>
+  
+  <script>
+    addEventListener("click", function(){
+      let heading = document.getElementById("heading");
+      heading.style.color = "blue";
+    })
+  </script>
+</body>
+</html>

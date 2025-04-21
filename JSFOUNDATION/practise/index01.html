@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <button id="clickMe">Click Me</button>
+  <p id="message"></p>
+
+  <script>
+    const button = document.getElementById("clickMe");
+    const message = document.getElementById("message");
+
+    button.addEventListener("click", function () {
+      message.textContent = "Button was clicked!";
+    });
+  </script>
+</body>
+
+</html>

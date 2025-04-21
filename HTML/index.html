@@ -1,41 +1,35 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>color change</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <div>
-    <h4>Hello Sarfraz</h4>
-    <h2>Add numbers</h2>
-    <ul id="ul"></ul>
-    <input type="number" name="" id="num1">
-    <input type="number" name="" id="num2">
-    <button id="btn">button</button>
-  </div>
-
-  <script>
-
-    function AddTwoValue(a, b) {
-      return a + b;
-    }
-
-    const btn = document.getElementById('btn')
-    const num1 = document.getElementById('num1').value
-    const num2 = document.getElementById('num2').value
-
-    btn.addEventListener('click', function () {
-
-      const result = AddTwoValue(num1, num2)
-
-      document.getElementById('ul').innerHTML = result
-
-    })
-
-  </script>
+  <h1>Click the button to change banckground color</h1>
+  <button onclick="changeColor()"></button>
+  <script src="script.js"></script>
 </body>
+</html> -->
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <h1> To-Do List</h1>
+    <div class="input-section">
+      <input type="text" id="taskInput" placeholder="Enter a new task..">
+      <button onclick="addTask()">Add</button> 
+    </div>
+    <ul id="taskList"></ul>
+  </div>
+  <script src="script.js"></script>
+</body>
 </html>
